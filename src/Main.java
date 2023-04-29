@@ -3,7 +3,11 @@ import java.util.*;
 public class Main {
 
     // WhiteStarUML이 Java 1.5 버전을 사용하여 ArrayList 생성시 new ArrayList<>()에서 <> 사이에 타입을 작성해야 정상작동함
+    //학생 목록
     static ArrayList<Student> studentList = new ArrayList<Student>();
+
+
+    //과목이름을 랜덤으로 정하기 위한 리스트
     static ArrayList<String> subjectNameList = new ArrayList<String>(Arrays.asList("Korean","English","Math","Science"));
 
     public static void main(String[] args) {
@@ -115,13 +119,13 @@ public class Main {
         //foreach를 사용하여 모든 학생들을 과목별 리스트로 분류
         for(Student student : studentList){
             for(int i = 0; i<3; i++){
-                if(student.subjectList.get(i).name == "Korean"){
+                if(student.subjectList.get(i).name.equals("Korean")){
                     korean.add(student.name);
-                }else if(student.subjectList.get(i).name == "English"){
+                }else if(student.subjectList.get(i).name.equals("English")){
                     English.add(student.name);
-                }else if(student.subjectList.get(i).name == "Math"){
+                }else if(student.subjectList.get(i).name.equals("Math")){
                     Math.add(student.name);
-                }else if(student.subjectList.get(i).name == "Science"){
+                }else if(student.subjectList.get(i).name.equals("Science")){
                     Science.add(student.name);
                 }
 
@@ -148,13 +152,13 @@ public class Main {
         //학생들을 과목별 리스트로 분류
         for(Student student : studentList){
             for(int i = 0; i<3; i++){
-                if(student.subjectList.get(i).name == "Korean"){
+                if(student.subjectList.get(i).name.equals("Korean")){
                     Korean.add(student);
-                }else if(student.subjectList.get(i).name == "English"){
+                }else if(student.subjectList.get(i).name.equals("English")){
                     English.add(student);
-                }else if(student.subjectList.get(i).name == "Math"){
+                }else if(student.subjectList.get(i).name.equals("Math")){
                     Math.add(student);
-                }else if(student.subjectList.get(i).name == "Science"){
+                }else if(student.subjectList.get(i).name.equals("Science")){
                     Science.add(student);
                 }
             }

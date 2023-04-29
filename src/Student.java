@@ -9,14 +9,20 @@ public class Student {
     ArrayList<Subject> subjectList = new ArrayList<Subject>();
     double score;
 
+
+    //학생생성
     public Student(int stno,String name){
         this.stno = stno;
         this.name = name;
     }
+
+    //과목추가
     public void addSubject(Subject subject){
         this.subjectList.add(subject);
     }
 
+
+    //과목불러오기
     public Subject getSubject(String SubjectName){
         for (Subject subject : subjectList) {
             if(subject.name.equals(SubjectName)){
@@ -25,6 +31,8 @@ public class Student {
         }
         return null;
     }
+
+    //과목점수 불러오기
     public double getSubjectScore(String SubjectName){
         for(Subject subject : subjectList){
             if(subject.name.equals(SubjectName)){
