@@ -25,6 +25,8 @@ public class Subject {
                 return score;
         }
 
+        
+        //과목 분류 및 학점에 맞게 정보 저장
         public Subject(String name, double midTermScore, double finalTermScore){
                 this.name = name;
                 this.midTermScore = midTermScore;

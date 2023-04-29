@@ -51,6 +51,8 @@ public class Student {
         return score;
     }
 
+
+    //점수 계산
     public void calcScore(){
         double score = 0;
         int credit =0;

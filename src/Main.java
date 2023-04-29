@@ -15,6 +15,9 @@ public class Main {
 
 
     }
+    
+    
+    //메뉴 출력 메소드
     static void PrintMenu(){
         int choice = 1;
         Scanner scanner = new Scanner(System.in);
@@ -50,6 +53,8 @@ public class Main {
 
     }
 
+
+    //학생설정 ( 학생은 임의로 직접 입력 )
     static void StudentSet(){
 
         int midscore;
